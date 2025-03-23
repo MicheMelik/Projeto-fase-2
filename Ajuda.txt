@@ -1,0 +1,40 @@
+Objetivo da Website:
+O projeto e uma website de venda de produtos alimentícios com entrega em domicílio 
+ou retirada na loja. 
+O projeto será projetado para oferecer uma experiencia simples, intuitiva e 
+eficiente. 
+A plataforma devera garantir uma navegação fluida e uma interação ágil entre o
+usuário e a aplicação permitindo que as transações sejam rápidas e eficazes. 
+Além disso, a website deverá ser responsiva e adaptável a diferentes tamanhos de 
+tela para computadores e dispositivos móveis. 
+
+Funcionalidades: 
+1) HomePage:
+É a página principal onde o cliente poderá ver promoções, com ícones rápidos para 
+compra e um carrossel interativo que contém 3 itens em promoção.
+Na home, o cliente poderá também navegar para as páginas que contêm os produtos à 
+venda por categoria: Higiene-Beleza, Hortifruti, Alimentos. 
+Ele também poderá clicar no ícone 'Conta' para criar a sua conta. 
+E no ícone 'Carrinho' para visualizar os produtos escolhidos e finalizar a compra.
+
+2) Categorias: Higiene-Beleza, Hortifruti, Alimentos
+Nessas páginas, o cliente poderá visualizar os produtos disponíveis, preços, etc. 
+Todas as páginas têm o mesmo layout e contêm os links para a home page, conta e 
+carrinho para facilitar a navegação. 
+Também há o mesmo rodapé em todas as páginas. Nessas páginas, eu não coloquei 
+nenhuma ação para possibilitar que o cliente adicione itens no carrinho.
+
+3) Conta do cliente:
+Nesta página, há um formulário com campos de texto, número, telefone, e-mail 
+e um menu suspenso para a escolha do estado. 
+O cliente deve preencher as informações de cadastro e, 
+quando clicar em enviar, o formulário será enviado ao meu e-mail. 
+Uma nova tela irá confirmar que o cadastro foi criado, e o cliente irá confirmar 
+ou cancelar o envio ao clicar em OK ou Cancelar.
+
+4) Carrinho:
+Nesta página, estão os produtos que o cliente selecionou para comprar. 
+Neste caso, já adicionei 2 produtos. Ele poderá editar as quantidades em 
+um formulário de número. Em seguida, escolherá se deseja entrega ou se irá 
+retirar a compra na loja. 
+Aqui, ele também deverá escolher uma data e hora para a entrega ou para a retirada.
