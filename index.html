@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Mart Online Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos o menu */
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+    nav {
+      background-color: #1e8449 !important;
+      padding: 10px;
+      text-align: center;
+      font-size: medium;
+      
+    }
+.navbar-nav {
+    margin-left: auto !important; 
+    padding-left: 0; 
+    background-color: #1e8449;
+}
+nav .d-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav form {
+    flex-grow: 1; 
+    max-width: 500px; 
+    gap: 8px; 
+}
+.navbar-nav {
+    white-space: nowrap; 
+}
+
+
+nav ul {
+    justify-content: flex-end !important;
+    align-items: center !important; 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a:focus,
+nav ul li a:active {
+    outline: none; 
+    box-shadow: none; 
+}
+
+nav ul li {
+    margin-right: 20px; 
+}
+nav ul li a {
+    color: rgba(255, 255, 255, 0.931); 
+    text-decoration: none; 
+}
+
+/* Hover efeito */
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+/* Remover borda nos ícones */
+nav ul li a i {
+    border: none;
+}
+
+
+    nav input[type="search"] {
+    padding: 10px; 
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    max-width: 800px;
+    margin-left: 20px; 
+}
+
+nav button {
+    padding: 5px 15px; 
+    font-size: 18px; 
+    border-radius: 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+    nav button:hover {
+      background-color: #45a049;
+    }
+    .categorias {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      background-color: white;
+
+    }
+    .listacategorias{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .listacategorias li {
+     margin-right: 20px;
+      background-color: white;
+      display: inline-block;
+      color: black;
+      font-size: larger;
+      text-align: center;
+    }
+      /* Estilo para footer */
+    .footer1 {
+      list-style-type:  none;
+      background-color: #1c2833;
+      margin-right: 20px;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer1 ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    .footer1 li {
+      display: inline-block;
+      color: white;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+
+
+/* Definir a altura fixa para o carrossel */
+.carousel {
+  height: 400px; 
+  overflow: hidden;
+}
+
+/* Estilo para as imagens dentro do carrossel */
+.carousel-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+}
+
+
+  </style>
+  <!-- Bootstrap JS e dependências (Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <table>
+      <tr>
+        <td>
+    <div class = "logo">
+    <img src="fotos home page/LOGO.jpg" alt="Logo da empresa" width="100">
+  </div>
+        </td>
+        <td>
+          <h1>Mini Mart</h1>
+          <h3>Seu Mercado Saudável: Frescor, Sabor e Bem-Estar em Cada Escolha!</h3>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <nav style="background-color: #1e8449";>
+    <div class="container-fluid">
+        <div class="d-flex w-100 align-items-center">
+            <!-- Formulário de busca à esquerda -->
+            <form class="d-flex me-auto"> 
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="flex-grow: 1; max-width: 800px;">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+
+            <!-- Conta e Carrinho à direita -->
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li class="nav-item me-3" style="color: white;">
+                    <a class="nav-link" href="FormularioCliente.html">
+                        <i class="bi bi-person" style="color: white;"></i> Conta
+                    </a>
+                </li>
+                <li class="nav-item" style="color: white;">
+                    <a class="nav-link" href="carrinho.html">
+                        <i class="bi bi-cart" style="color: white;"></i> Carrinho
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+  <div class="categorias">
+    <ul class="listacategorias">
+      <a href="Hortifruti.html" style="color: green; text-decoration: none;">
+        <li style="color: #1e8449;">Hortifruti</li>
+    </a>
+    <a href="Alimentos.html" style="color: green; text-decoration: none;">
+      <li style="color: #1e8449;">Alimentos</li>
+  </a>
+  <a href="Higiene-Beleza.html" style="color: green; text-decoration: none;">
+    <li style="color: #1e8449;">Higiene-Beleza</li>
+</a>
+      
+    </ul>
+    
+  </div>
+
+  <!-- Entrega -->
+  <div style="text-align: center; width: 100%;">
+
+  <div style="width: 45%;text-align: center;align-items: center ;font-size: smaller; display: inline-block; vertical-align: top; background-color: #FFC300; padding:0;margin-bottom: 20px;">
+    <h3 style="margin: 5px 0;">Frete Grátis </h3>
+    <p style="margin: 5px 0;">Para compras acima de R$ 200,00</p>
+</div>
+<div style="width: 45%;text-align: center; font-size: smaller; display: inline-block; vertical-align: top; background-color: #FFC300; padding: 0;margin-bottom: 20px;">
+    <h3 style="margin: 5px 0;">Retire na Loja</h3>
+    <p style="margin: 5px 0; ">Sem filas e sem custo.</p>
+</div>
+</div>
+<!-- Fim Entrega -->
+
+<!-- Carrossel -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="carrosel/Oferta1.png" class="d-block w-100" alt="Oferta de Chocolate Bis">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="carrosel/oferta2.png" class="d-block w-100" alt="Escova Oral B">
+    </div>
+    <div class="carousel-item">
+      <img src="carrosel/oferta4.png" class="d-block w-100" alt="Salgadinho">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- Fim Carrosel -->
+
+  <div class="BloquinhoOfertas" style="margin-bottom: 50px; margin-top: 10px; text-align: center; color:#45a049 ;">
+    <h2>Show De Ofertas Para Você</h2>
+    <div>
+      <!-- Produto 1 -->
+      <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+          <img src="fotos home page/Neve.png" alt="Papel Higienico Neutro Neve" width="150" height="150"><br>
+          <strong>Papel Higienico Neutro Neve</strong><br>
+          <span>R$ 20,00</span><br>
+          <button>Comprar</button>
+      </div>
+
+      <!-- Produto 2 -->
+      <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+          <img src="fotos home page/Dove.png" alt="Desodorante Aerosol Dove" width="150" height="150"><br>
+          <strong>Desodorante Aerosol Dove</strong><br>
+          <span>R$ 19,99</span><br>
+          <button>Comprar</button>
+      </div>
+
+      <!-- Produto 3 -->
+      <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+          <img src="fotos home page/coca cola.png" alt="Refrigerante sem açúcar Coca cola" width="150" height="150"><br>
+          <strong>Refrigerante sem açúcar Coca cola</strong><br>
+          <span>R$ 8,00</span><br>
+          <button>Comprar</button>
+      </div>
+
+      <!-- Produto 4 -->
+      <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+          <img src="fotos home page/doritos.png" alt="Salgadinho milho queijo nacho Doritos" width="150" height="150"><br>
+          <strong>Salgadinho milho queijo nacho Doritos</strong><br>
+          <span>R$ 15,00</span><br>
+          <button>Comprar</button>
+      </div>
+            <!-- Produto 5 -->
+            <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+              <img src="fotos home page/Cerveja.png" alt="Cerveja Lager Heineken" width="150" height="150"><br>
+              <strong>Cerveja Lager Heineken Garrafa</strong><br>
+              <span>R$ 5,99</span><br>
+              <button>Comprar</button>
+      </div>
+  </div>
+  </div>
+  <footer class="footer1">  
+      <div style="text-align: center; width: 100%;">
+        <div style="width: 45%; display: inline-block; vertical-align: top; padding: 10px;">
+            <h3 style="margin: 5px 0; color: #1e8449;">Central de Atendimento: 0800 333 7788</h3>
+            <p style="margin: 5px 0;color: white;">Localização: Rua Tomas das Neves 45. Porto Alegre</p>
+        </div>
+        <div style="width: 45%; display: inline-block; vertical-align: top; padding: 10px;text-align: right;">
+            <p style="margin: 5px 0;color: #1e8449">Meus Pedidos</p>
+            <p style="margin: 5px 0;color: #1e8449">Formas de Pagamento</p>
+            <p style="margin: 5px 0;color: #1e8449">Trocas e devoluções</p>
+            <p style="margin: 5px 0;color: #1e8449">Dúvidas Frequentes</p>
+            <p style="margin-top: 20px;font-size: smaller; color:aliceblue;">Grupo MicheMelik</p>
+        </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var myCarousel = document.querySelector('#carouselExampleInterval');
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // Intervalo de troca das imagens (em milissegundos)
+        ride: 'carousel'
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mart Online Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+   <style>
+    /* Estilos o menu */
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+    nav {
+      background-color: #1e8449;
+      padding: 10px;
+      text-align: center;
+      font-size: medium;
+      
+    }
+    .navbar-nav {
+    margin-left: auto !important; 
+    padding-left: 0; 
+}
+nav .d-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav form {
+    flex-grow: 1; 
+    max-width: 500px; 
+    gap: 8px; 
+}
+.navbar-nav {
+    white-space: nowrap; 
+}
+
+
+nav ul {
+    justify-content: flex-end !important;
+    align-items: center !important; 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li a:focus,
+nav ul li a:active {
+    outline: none; 
+    box-shadow: none; 
+}
+
+nav ul li {
+    margin-right: 20px; 
+}
+nav ul li a {
+    color: rgba(255, 255, 255, 0.931); 
+    text-decoration: none; 
+}
+
+/* Hover efeito */
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+/* Remover borda nos ícones */
+nav ul li a i {
+    border: none;
+}
+
+
+    nav input[type="search"] {
+    padding: 10px; 
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    max-width: 800px; 
+    margin-left: 20px;
+}
+
+nav button {
+    padding: 5px 15px; 
+    font-size: 18px; 
+    border-radius: 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+    nav button:hover {
+      background-color: #45a049;
+    }    
+   
+     /* Estilo para footer */
+     .footer1 {
+      list-style-type:  none;
+      background-color: #1c2833;
+      margin-right: 20px;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer1 ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    .footer1 li {
+      display: inline-block;
+      color: white;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <table>
+          <tr>
+            <td>
+        <div class = "logo">
+        <img src="fotos home page/LOGO.jpg" alt="Logo da empresa" width="100">
+      </div>
+            </td>
+            <td>
+              <h1>Mini Mart</h1>
+              <h3>Seu Mercado Saudável: Frescor, Sabor e Bem-Estar em Cada Escolha!</h3>
+            </td>
+          </tr>
+        </table>
+      </header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex w-100 align-items-center">
+                <!-- Formulário de busca à esquerda -->
+                <form class="d-flex me-auto"> 
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="flex-grow: 1; max-width: 800px;">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+    
+                <!-- Conta e Carrinho à direita -->
+                <ul class="navbar-nav d-flex flex-row align-items-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="FormularioCliente.html">
+                            <i class="bi bi-person"></i> Conta
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">
+                            <i class="bi bi-cart"></i> Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 10px; font-size: 14px;">
+        <span>
+            <a href="index.html" style="color: green; text-decoration: none;">Home</a> &gt;
+            <a href="Higiene-Beleza_page_link" style="color: black; text-decoration: none;">Higiene-Beleza</a>
+        </span>
+    </div>
+    <div>
+        <H2 style="margin-left: 10px;">Higiene-Beleza</H2>
+        <h3 style="color:#1e8449; margin-left: 10px;">Higiene + Saúde</h3>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <!-- Produto 1 -->
+        <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+            <img src="foto higiene-beleza/pasta de dente.png" alt="Creme dental Colgate" width="150" height="150"><br>
+            <strong>Creme Dental Colgate</strong><br>
+            <span>R$ 16,32</span><br>
+            <span>60 gr</span><br>
+            <span></span><br>
+            <button>Comprar</button>
+        </div>
+  
+        <!-- Produto 2 -->
+        <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+            <img src="foto higiene-beleza/escova de dente.png" alt="Escova dental Colgate" width="150" height="150"><br>
+            <strong>Escova Dental Colgate</strong><br>
+            <span>R$ 20,99</span><br>
+            <span>4 unidades</span><br>
+            <span></span><br>
+            <button>Comprar</button>
+        </div>
+  
+        <!-- Produto 3 -->
+        <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+            <img src="foto higiene-beleza/detergente.png" alt="Lava louças liquido" width="150" height="150"><br>
+            <strong>Lava-louças Ype</strong><br>
+            <span>R$ 18,99</span><br>
+            <span>3 unidades</span><br>
+            <span></span><br>
+            <button>Comprar</button>
+        </div>
+  
+        <!-- Produto 4 -->
+        <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+            <img src="foto higiene-beleza/detergente em po.png" alt="Lava-Roupas pó OMO" width="150" height="150"><br>
+            <strong>Lava-Roupas pó OMO</strong><br>
+            <span>R$ 29,39</span><br>
+            <span>2,2 kg</span><br>
+            <span></span><br>
+            <button>Comprar</button>
+        </div>
+              <!-- Produto 5 -->
+              <div style="border: 1px solid #45a049; padding: 10px; width: 200px; text-align: center; display: inline-block; margin: 10px;">
+                <img src="foto higiene-beleza/bombril.png" alt="Esponja Aço Bom Bril" width="150" height="150"><br>
+                <strong>Esponja Aço Bom Bril</strong><br>
+                <span>R$ 3,36</span><br>
+                <span>60 gr</span><br>
+                <span>8 unidades</span><br>
+                <button>Comprar</button>
+        </div>
+    
+        </div>   
+        <footer class="footer1">  
+            <div style="text-align: center; width: 100%;">
+              <div style="width: 45%; display: inline-block; vertical-align: top; padding: 10px;">
+                  <h3 style="margin: 5px 0; color: #1e8449;">Central de Atendimento: 0800 333 7788</h3>
+                  <p style="margin: 5px 0;color: white;">Localização: Rua Tomas das Neves 45. Porto Alegre</p>
+              </div>
+              <div style="width: 45%; display: inline-block; vertical-align: top; padding: 10px;text-align: right;">
+                  <p style="margin: 5px 0;color: #1e8449">Meus Pedidos</p>
+                  <p style="margin: 5px 0;color: #1e8449">Formas de Pagamento</p>
+                  <p style="margin: 5px 0;color: #1e8449">Trocas e devoluções</p>
+                  <p style="margin: 5px 0;color: #1e8449">Dúvidas Frequentes</p>
+                  <p style="margin-top: 20px;font-size: smaller; color:aliceblue;">Grupo MicheMelik</p>
+              </div>
+          </div>
+        </footer>
+</body> 
+</html>

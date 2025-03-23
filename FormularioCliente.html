@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mart Online Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+   <style>
+    /* Estilos o menu */
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+    nav {
+      background-color: #1e8449;
+      padding: 10px;
+      text-align: center;
+      font-size: medium;
+      
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      text-align: center;
+      color: whitesmoke;
+      font-size: large;
+      justify-content: space-around;
+      align-items: center;
+      
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: rgba(255, 255, 255, 0.931);
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+     /* Estilo para a caixa de pesquisa */
+     nav form {
+      display: inline-block; 
+      margin-bottom: 5px;
+    }
+    nav input[type="search"] {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px;
+      width: 500px;
+    }
+    nav button {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #45a049;
+    }
+     /* Estilo para footer */
+     .footer1 {
+      list-style-type:  none;
+      background-color: #1c2833;
+      margin-right: 20px;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer1 ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    .footer1 li {
+      display: inline-block;
+      color: white;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    fieldset {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 45%;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #1e8449;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #7fe52b;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px; 
+            width: 100%;
+}
+.form-group {
+    width: 100%; 
+}
+</style>
+</head>
+<body>
+    <header>
+        <table>
+          <tr>
+            <td>
+        <div class = "logo">
+        <img src="fotos home page/LOGO.jpg" alt="Logo da empresa" width="100">
+      </div>
+            </td>
+            <td>
+              <h1>Mini Mart</h1>
+              <h3>Seu Mercado Saudável: Frescor, Sabor e Bem-Estar em Cada Escolha!</h3>
+            </td>
+          </tr>
+        </table>
+      </header>
+ 
+  <!-- navegacao -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"></span>
+    </div>
+  </nav>
+
+    <div style="padding: 10px; font-size: 14px;">
+        <span>
+            <a href="index.html" style="color: green; text-decoration: none;">Home</a> &gt;
+            <a href="FormularioCliente.html" style="color: black; text-decoration: none;">Cadastro Cliente Mais</a>
+        </span>
+    </div>
+    <div>
+
+        <h3 style="color:#1e8449; margin-left: 10px; text-align: center; ">Cadastro Cliente Mais</h3>
+    </div>
+    <form id="formCliente" action="https://formsubmit.co/michelemelikardi@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://michemelik.github.io/HTMLPUCRSproject2025/">
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            
+            <div class="form-container">
+
+<!--Radio button-->
+<div class="radio-group">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">Homem</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">Mulher</label>
+    </div>
+</div>
+<!--Fim radio button-->
+
+                <div class="form-group">
+                    <label>Primeiro Nome</label>
+                    <input type="text" name="pnome"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Sobrenome</label>
+                    <input type="text" name="snome"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email"/>
+                </div>
+
+                <div class="form-group">
+                    <label>CPF</label>
+                    <input type="text" name="cpfnumero"maxlength="11" pattern="\d{11}" required/>
+                    <small>Digite apenas números (ex: 12345678901)</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Telefone Prefixo</label>
+                    <input type="tel" name="telprefixo" pattern="\d{2,4}" placeholder="Ex: 11 ou 031" required/>
+                </div>
+
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="tel" name="tel" pattern="\d{7}" placeholder="Ex: 9876543" required/>
+                </div>
+
+                <div class="form-group">
+                    <label>Rua</label>
+                    <input type="text" name="rua"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Número</label>
+                    <input type="number" name="numero"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Bairro</label>
+                    <input type="text" name="bairro"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Cidade</label>
+                    <input type="text" name="cidade"/>
+                </div>
+
+                <label for="estado" style="white-space: nowrap;">Estado:</label>
+                <select name="estado" id="estado" required style="flex: 1; padding: 8px;">
+                        <option value="" disabled selected>Selecione seu estado</option>
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </select>
+                
+            </div>
+            <button type="submit">Enviar</button>
+            </a>
+        </fieldset>
+    </form>
+    <script>
+        document.getElementById("formCliente").addEventListener("submit", function(e) {
+            if (!confirm("Cadastro criado! Clique em OK para continuar.")) {
+                e.preventDefault(); 
+            }
+        });
+    </script>
+        
+</body>
+</html>
